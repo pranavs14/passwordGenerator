@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="heading-one">Generate a</h1>
+            <h1 class="heading-two">random password</h1>
+            <p class="line-detail">Never use an insecure password again.</p>
+            <br/>
+            <div class="generator">
+                <button class="generate-password" id="generate-password">Generate Password</button>
+                <input id="password-size" class="password-size" type="number" placeholder="pwd size."min="1" max="10" required/>
+            </div>
+            <br/>
+            <hr/>
+            <br/>
+            <div class="password-class">
+                <div class="pwd pwd-one" id="password-one">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"/>
+                        </svg>
+                    </span>
+                    <p class="password-one" id="pwd-one">
+                        gergerg
+                    </p>
+                </div>
+                <div class="pwd pwd-two" id="password-two">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"/>
+                        </svg>
+                    </span>
+                    <p class="password-two" id="pwd-two">
+                        gergerg
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="snackbar">Text copied to clipboard!</div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+    color: white;
+    font-family: Karla !important;
+}
+
+hr{
+    color: white;
+    border: 0.2px solid;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    width: 70vw;
+}
+
+h1{
+    font-family: Karla;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -2.5%;
+}
+
+svg{
+    height: 16px !important;
+    position: relative;
+    /* top: 5px; */
+    fill: #55F991;
+}
+
+.heading-two{
+    color: #10B981;
+}
+
+.line-detail{
+    opacity: 0.6;
+    font-size: 12px;
+    text-align: left;
+}
+
+.generator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.generate-password{
+    width: 191;
+    height: 42;
+    top: 284px;
+    left: 52px;
+    border-radius: 6px;
+    padding-top: 9px;
+    padding-right: 17px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    gap: 12px;
+    outline: none;
+    border: 0px;
+    background-color: #10B981;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.generate-password:focus{
+    outline: none;
+}
+
+
+.password-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 50%;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.password-class div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #273549;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #55F991;
+    margin: 5px;
+    width: 150px;
+    overflow: hidden;
+    font-size: 12px;
+    height: 40px !important;
+    white-space: nowrap;
+}
+
+.password-class p {
+    /* Limit the width so the text can overflow horizontally */
+    width: 300px;
+    
+    /* Keep text on a single line and clip overflow */
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /* Use an inline-block or block container for proper masking */
+    display: inline-block;
+  
+    /* Create a left-to-right mask gradient:
+       - The solid black portion (left side) shows the text fully.
+       - The transparent portion (right side) fades the text out. */
+    -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  
+    /* Ensure the mask covers the entire box */
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.password-class span{
+    margin-right: 5px;
+}
+
+.password-size{
+    background-color: #273549;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #55F991;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 0px;
+    width: 80px !important;
+    font-size: 12px;
+    outline: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.error-message{
+    color: red;
+    opacity: 0.6;
+    font-size: 12px;
+    margin: 0px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#snackbar {
+    border-radius: 20px;
+    visibility: hidden;
+    background-color: #273549;
+    color: #55F991;
+    font-size: 12px !important;
+    text-align: center; 
+    padding: 5px 10px !important;
+    position: fixed;   
+    z-index: 9999;      
+    left: 50%;          
+    bottom: 30px;       
+    font-size: 16px;
+    transform: translateX(-50%); 
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.3s ease-in-out;
+  }
+
+  #snackbar.show {
+    visibility: visible;  /* Make it visible */
+    opacity: 0.8;           /* Fully opaque */
+    transition-delay: 0s; /* Override the delay for immediate show */
+  }
